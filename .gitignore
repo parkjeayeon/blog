@@ -1,0 +1,14 @@
+# 기본적으로 모든 것을 무시 (보안: 개인 노트 유출 방지)
+/*
+
+# content 폴더만 Git 추적 허용 (블로그 게시 대상)
+!/content/
+
+# 빌드/배포 설정 파일 허용
+!/.gitignore
+!/.github/
+!/quartz.config.ts
+!/quartz.layout.ts
+!/package.json
+!/package-lock.json
+!/tsconfig.json

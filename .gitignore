@@ -7,6 +7,7 @@
 # 빌드/배포 설정 파일 허용
 !/.gitignore
 !/.github/
+!/quartz/
 !/quartz.config.ts
 !/quartz.layout.ts
 !/package.json

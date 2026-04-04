@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "ko-KR",
     baseUrl: "viakiro.com",
-    ignorePatterns: ["private", "templates", ".obsidian", "drafts", "docs"],
+    ignorePatterns: ["private", "templates", ".obsidian", "drafts", "docs", "templates"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",

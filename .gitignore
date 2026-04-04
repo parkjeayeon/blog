@@ -3,6 +3,7 @@
 
 # content 폴더만 Git 추적 허용 (블로그 게시 대상)
 !/content/
+!/docs/
 
 # 빌드/배포 설정 파일 허용
 !/.gitignore

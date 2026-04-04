@@ -1,11 +1,6 @@
 @use "./base.scss";
 @use "./variables.scss" as *;
 
-// header: Pretendard, body: Noto Sans KR (loaded via Google Fonts)
-:root {
-  --headerFont: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
 // left sidebar top padding: 6rem → 2rem to match reference layout
 @media all and (min-width: 1200px) {
   .sidebar.left {

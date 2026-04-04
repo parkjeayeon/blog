@@ -53,25 +53,27 @@ export default ((userOpts?: Partial<Options>) => {
                       </a>
                     </h3>
                   </div>
-                  {page.dates && (
-                    <p class="meta">
-                      <Date date={getDate(cfg, page)!} locale={cfg.locale} />
-                    </p>
-                  )}
-                  {opts.showTags && (
-                    <ul class="tags">
-                      {tags.map((tag) => (
-                        <li>
-                          <a
-                            class="internal tag-link"
-                            href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
-                          >
-                            {tag}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  <div class="card-footer">
+                    {page.dates && (
+                      <p class="meta">
+                        <Date date={getDate(cfg, page)!} locale={cfg.locale} />
+                      </p>
+                    )}
+                    {opts.showTags && tags.length > 0 && (
+                      <ul class="tags">
+                        {tags.map((tag) => (
+                          <li>
+                            <a
+                              class="internal tag-link"
+                              href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
+                            >
+                              {tag}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
                 </div>
               </li>
             )

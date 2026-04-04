@@ -8,8 +8,8 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/parkjeayeon",
+      Email: "mailto:wodus331@gmail.com",
     },
   }),
 }
@@ -25,20 +25,32 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   afterBody: [
-    Component.Comments({
-      provider: "giscus",
-      options: {
-        repo: "parkjeayeon/blog",
-        repoId: "R_kgDOR5WQpQ",
-        category: "Announcements",
-        categoryId: "DIC_kwDOR5WQpc4C6BnR",
-        mapping: "pathname",
-        reactionsEnabled: true,
-        inputPosition: "bottom",
-        lightTheme: "light",
-        darkTheme: "dark",
-        lang: "ko",
-      },
+    Component.ConditionalRender({
+      component: Component.RecentNotes({
+        title: "Recent Posts",
+        limit: 10,
+        showTags: true,
+        filter: (f) => !f.slug?.endsWith("index"),
+      }),
+      condition: (page) => page.fileData.slug === "index",
+    }),
+    Component.ConditionalRender({
+      component: Component.Comments({
+        provider: "giscus",
+        options: {
+          repo: "parkjeayeon/blog",
+          repoId: "R_kgDOR5WQpQ",
+          category: "Announcements",
+          categoryId: "DIC_kwDOR5WQpc4C6BnR",
+          mapping: "pathname",
+          reactionsEnabled: true,
+          inputPosition: "bottom",
+          lightTheme: "light",
+          darkTheme: "dark",
+          lang: "ko",
+        },
+      }),
+      condition: (page) => page.fileData.slug !== "index",
     }),
   ],
   left: [

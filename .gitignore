@@ -9,6 +9,7 @@
 !/.gitignore
 !/.github/
 !/quartz/
+/quartz/.quartz-cache/
 !/quartz.config.ts
 !/quartz.layout.ts
 !/package.json

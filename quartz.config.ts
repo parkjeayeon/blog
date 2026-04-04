@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "ko-KR",
-    baseUrl: "blog.wodus331.workers.dev",
+    baseUrl: "viakiro.com",
     ignorePatterns: ["private", "templates", ".obsidian", "drafts"],
     defaultDateType: "created",
     theme: {

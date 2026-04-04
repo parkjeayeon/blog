@@ -46,7 +46,7 @@ flowchart TD
 
 ## 4. 스펙 정의
 
-### 기술 스택
+### 4-1. 기술 스택
 
 | 역할 | 기술 |
 |------|------|
@@ -57,7 +57,7 @@ flowchart TD
 | 이미지 스토리지 | Cloudflare R2 (egress 무료) |
 | 댓글 | Giscus (GitHub Discussions) |
 
-### Obsidian 플러그인
+### 4-2. Obsidian 플러그인
 
 | 플러그인 | 용도 |
 |----------|------|
@@ -65,7 +65,7 @@ flowchart TD
 | Templater | 글/폴더 index 템플릿 자동 생성 |
 | Image Upload Toolkit | 이미지 → R2 업로드 (수동 트리거) |
 
-### 콘텐츠 규칙
+### 4-3. 콘텐츠 규칙
 
 - `content/` root에 파일 직접 저장 금지 → 반드시 카테고리 폴더 안에 저장
 - 파일명은 영문 kebab-case (URL slug가 됨)

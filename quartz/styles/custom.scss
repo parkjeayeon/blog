@@ -4,3 +4,49 @@
 :root {
   --headerFont: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+// left sidebar top padding: 6rem → 2rem to match reference layout
+@media all and (min-width: 1200px) {
+  .sidebar.left {
+    padding-top: 2rem;
+  }
+}
+
+// explorer: remove active color, apply only on hover
+.explorer-content ul li > a {
+  &.active {
+    color: var(--dark);
+    opacity: 0.75;
+  }
+
+  &:hover {
+    opacity: 1;
+    color: var(--tertiary);
+  }
+}
+
+// search: full width, icon on the right
+.search {
+  max-width: unset;
+  width: 100%;
+
+  & > .search-button {
+    border-radius: 8px;
+    padding: 0 0.75rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--lightgray);
+    border-color: transparent;
+
+    & svg {
+      margin: 0;
+    }
+
+    & > p {
+      padding-left: 0.25rem;
+      color: var(--gray);
+    }
+  }
+}

@@ -25,6 +25,23 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ContentMeta(),
     Component.TagList(),
   ],
+  afterBody: [
+    Component.Comments({
+      provider: "giscus",
+      options: {
+        repo: "parkjeayeon/blog",
+        repoId: "R_kgDOR5WQpQ",
+        category: "Announcements",
+        categoryId: "DIC_kwDOR5WQpc4C6BnR",
+        mapping: "pathname",
+        reactionsEnabled: true,
+        inputPosition: "bottom",
+        lightTheme: "light",
+        darkTheme: "dark",
+        lang: "ko",
+      },
+    }),
+  ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),

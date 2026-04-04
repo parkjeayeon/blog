@@ -36,6 +36,32 @@ a {
   gap: 32px;
 }
 
+// mobile header layout
+@media all and ($mobile) {
+  // hamburger to the right end
+  .explorer {
+    order: 999;
+  }
+
+  // remove top/bottom padding from sticky header
+  .page > #quartz-body .sidebar.left {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  // reset h2 margins so page title doesn't inflate header height
+  .page-title {
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  // reduce gap between header items
+  .page > #quartz-body .sidebar {
+    gap: 0.75rem;
+  }
+}
+
 // search: icon on the right
 .search {
   & > .search-button {

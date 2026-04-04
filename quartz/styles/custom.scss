@@ -25,11 +25,21 @@
   }
 }
 
+// darkmode button size
+.darkmode {
+  height: 2px;
+  margin: 0 10px;
+}
+
+// sidebar gap
+.page > #quartz-body .sidebar {
+  gap: 32px;
+}
+
 // search: icon on the right
 .search {
   & > .search-button {
-    border-radius: 8px;
-    padding: 0 0.75rem;
+    padding: 0 0.5rem;
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 100%;
@@ -43,7 +53,7 @@
 
     & > p {
       padding-left: 0.25rem;
-      color: var(--gray);
+      color: var(--darkgray);
     }
   }
 }

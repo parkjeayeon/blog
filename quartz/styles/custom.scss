@@ -25,11 +25,8 @@
   }
 }
 
-// search: full width, icon on the right
+// search: icon on the right
 .search {
-  max-width: unset;
-  width: 100%;
-
   & > .search-button {
     border-radius: 8px;
     padding: 0 0.75rem;

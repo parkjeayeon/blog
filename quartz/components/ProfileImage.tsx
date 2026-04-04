@@ -1,28 +1,29 @@
-import { pathToRoot } from "../util/path"
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import {pathToRoot} from "../util/path"
+import {QuartzComponent, QuartzComponentConstructor, QuartzComponentProps} from "./types"
 
-const ProfileImage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
-  const baseDir = pathToRoot(fileData.slug!)
-  return (
-    <div class="profile-image-container">
-      <img src={`${baseDir}/static/profile.webp`} alt="Profile" class="profile-image" />
-    </div>
-  )
+const ProfileImage: QuartzComponent = ({fileData}: QuartzComponentProps) => {
+    const baseDir = pathToRoot(fileData.slug!)
+    return (
+        <div class="profile">
+            <img src={`${baseDir}/static/profile.webp`} alt="Profile"/>
+        </div>
+    )
 }
 
 ProfileImage.css = `
-.profile-image-container {
-  display: flex;
-  justify-content: center;
+.profile {
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    display: flex;
+    transform: translate(-15px);
 }
 
-.profile-image {
+.profile img {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: top center;
-  border: 2px solid var(--lightgray);
+  box-shadow: 0 4px 8px #0000001a;
 }
 `
 

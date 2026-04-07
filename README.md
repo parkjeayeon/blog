@@ -5,7 +5,10 @@ Obsidian에서 작성한 마크다운을 Quartz 4로 빌드하여 Cloudflare Pag
 
 **배포 주소**: [viakiro.com](https://viakiro.com)
 
-## claude code
+## 아키텍쳐 구상도
+![Obsidian Blog 1775558251585](https://pub-b0493813f2034054b2928bb2344d833a.r2.dev/2026/04/Obsidian%20Blog-1775558251585.webp)
+
+## Claude code
 해당 프로젝트는 claude code를 통해 생성한 prd 기반 개발 테스트을 위해 생성한 프로젝트입니다.<br/>
 **개발기한**: 04.04~ 04.05
 

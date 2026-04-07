@@ -16,21 +16,21 @@ Claude Code를 활용해 Obsidian 기반 기술 블로그를 구축하고 자동
 Obsidian에서 마크다운으로 글을 작성하면 GitHub Actions가 자동으로 감지해 Quartz 4로 빌드하고 Cloudflare Pages에 배포한다. 글쓰기 이외의 모든 과정이 자동화되어 있다.
 
 **배포 주소**: [viakiro.com](https://viakiro.com)
-**깃허브**: [viakiro.com](https://viakiro.com)
+**깃허브**: [blog](https://github.com/parkjeayeon/blog)
 ## 2. 아키텍쳐 구상도
 
 ![Obsidian Blog 1775558251585](https://pub-b0493813f2034054b2928bb2344d833a.r2.dev/2026/04/Obsidian%20Blog-1775558251585.webp)
 
 ## 3. 주요 기능 정의
 
-| 기능 | 설명 |
-|------|------|
-| 자동 commit | Obsidian Git이 30분 주기로 변경사항을 자동 commit |
-| 수동 push | Cloudflare Pages 무료 빌드(월 500회) 보호를 위해 push는 수동 실행 |
-| Draft 관리 | frontmatter `draft: true`로 작성 중인 글을 빌드에서 제외 |
-| 이미지 호스팅 | Cloudflare R2에 업로드 후 퍼블릭 URL로 교체 (Git 저장소에 바이너리 미포함) |
-| 자동 배포 | `content/**` 변경 감지 시 GitHub Actions → Quartz 빌드 → Cloudflare Pages 배포 |
-| 댓글 | Giscus (GitHub Discussions 기반) |
+| 기능        | 설명                                                                    |
+| --------- | --------------------------------------------------------------------- |
+| 자동 commit | Obsidian Git이 30분 주기로 변경사항을 자동 commit                                 |
+| 수동 push   | Cloudflare Pages 무료 빌드(월 500회) 보호를 위해 push는 수동 실행                     |
+| Draft 관리  | frontmatter `draft: true`로 작성 중인 글을 빌드에서 제외                           |
+| 이미지 호스팅   | Cloudflare R2에 업로드 후 퍼블릭 URL로 교체 (Git 저장소에 바이너리 미포함)                  |
+| 자동 배포     | `content/**` 변경 감지 시 GitHub Actions → Quartz 빌드 → Cloudflare Pages 배포 |
+| 댓글        | Giscus (GitHub Discussions 기반)                                        |
 
 ## 4. 스펙 정의
 

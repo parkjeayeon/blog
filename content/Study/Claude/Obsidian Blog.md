@@ -48,14 +48,18 @@ flowchart TD
 
 ### 4-1. 기술 스택
 
-| 역할 | 기술 |
-|------|------|
-| 편집기 | Obsidian |
-| 정적 사이트 생성기 | Quartz 4 (Preact 기반) |
-| 호스팅 | Cloudflare Pages (무료 티어) |
-| CI/CD | GitHub Actions |
-| 이미지 스토리지 | Cloudflare R2 (egress 무료) |
-| 댓글 | Giscus (GitHub Discussions) |
+| 역할         | 기술                          | 선정 이유                                                    | 비고                                                             |
+| ---------- | --------------------------- | -------------------------------------------------------- | -------------------------------------------------------------- |
+| 편집기        | Obsidian                    | 평소 즐겨쓰는 메모Tool이고 팀 블로그가 <br>아니라 개인 블로그라서 선정              |                                                                |
+| 정적 사이트 생성기 | Quartz 4 (Preact 기반)        | 태생이 Obsidian을 웹사이트 형태로 <br>게시하기 위한 도구로 설계됨               | [문서](https://quartz.jzhao.xyz/features/Obsidian-compatibility) |
+| 호스팅        | Cloudflare Pages            | 무료                                                       |                                                                |
+| CI/CD      | GitHub Actions              | 무료                                                       |                                                                |
+| 이미지 호스팅    | Cloudflare R2               | 무료                                                       |                                                                |
+| 댓글         | Giscus (GitHub Discussions) | 댓글창을 구현하고 싶은데 서버 없이 사용을 원했고<br>github repo를 활용한 해당 스택 해택 |                                                                |
+
+EC2 + Nginx + 서버 사용 안한 이유는
+블로그는 지속성이 있어야한다고 생각해서 돈이 안나가는 방향으로 설계
+
 
 ### 4-2. Obsidian 플러그인
 

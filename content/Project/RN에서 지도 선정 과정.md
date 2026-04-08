@@ -4,12 +4,28 @@ date: 2026-04-07
 tags:
   - react-native
   - map
+  - mapbox
+  - maplibre
 description:
-draft: true
+draft: false
 ---
 후보리스트 `mapbox` , `webview + maplibre + local http`
 
+선정 이후 research 문서나 PRD 문서는 제외
+
 # 자료 정리 후 요약본
 
-## 처음 정리했을 때 당시 
-![[RN에서 지도 선정 과정-1775631819116.webp]]
+## 1. 처음 정리했을 때 요약본 -> Mapbox 
+
+장기적으로 유저수로 문제가 된다면 돈을 벌고 있다는 의미고 그땐 그 돈을 기반으로 선택하면 된다고 생각한다
+Mapbox 라이센스문제만 확인하고 확정지을려고 했으나...
+![RN에서 지도 선정 과정 1775631819116|697x5347](https://pub-b0493813f2034054b2928bb2344d833a.r2.dev/2026/04/RN%EC%97%90%EC%84%9C%20%EC%A7%80%EB%8F%84%20%EC%84%A0%EC%A0%95%20%EA%B3%BC%EC%A0%95-1775631819116.webp)
+
+---
+
+## 2. Mapbox 라이센스 요구로 인해 Webview 구현방향으로 확정
+
+특정분야에서 사용할땐 Mapbox 라이센스를 추가 요구했고 우리 앱이 해당되서 사용안하는 걸로 확정
+현재 MapLibre Native는 globe 지원을 하지않기에 추후에 마이그레이션까지 고려하여 인터페이스 설계
+
+![RN에서 지도 선정 과정 1775632076534](https://pub-b0493813f2034054b2928bb2344d833a.r2.dev/2026/04/RN%EC%97%90%EC%84%9C%20%EC%A7%80%EB%8F%84%20%EC%84%A0%EC%A0%95%20%EA%B3%BC%EC%A0%95-1775632076534.webp)

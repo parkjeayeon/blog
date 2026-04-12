@@ -66,3 +66,5 @@ https://github.com/cjo4m06/mcp-shrimp-task-manager
 설치하고 나면 클로드가 단순한 채팅 상대를 넘어, 내 로컬 프로젝트의 상황을 꿰뚫고 있는 유능한 조수가 되는 것
 
 
+## 사용법
+

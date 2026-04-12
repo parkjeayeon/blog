@@ -13,9 +13,9 @@ draft: false
 
 Claude Code를 활용해 Obsidian 기반 기술 블로그를 구축하고 자동 배포 파이프라인을 완성한 프로젝트.
 
-Obsidian에서 마크다운으로 글을 작성하면 GitHub Actions가 자동으로 감지해 Quartz 4로 빌드하고 Cloudflare Pages에 배포한다. 글쓰기 이외의 모든 과정이 자동화되어 있다.
+Obsidian에서 마크다운으로 글을 작성하면 GitHub Actions가 자동으로 감지해<br/>Quartz 4로 빌드하고 Cloudflare Pages에 배포한다. <br/>글쓰기 이외의 모든 과정이 자동화되어 있다.
 
-**배포 주소**: [viakiro.com](https://viakiro.com)
+**배포 주소**: [viakiro.com](https://viakiro.com) <br/>
 **깃허브**: [blog](https://github.com/parkjeayeon/blog)
 ## 2. 아키텍쳐 구상도
 

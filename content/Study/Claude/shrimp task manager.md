@@ -5,7 +5,7 @@ tags:
   - mcp
   - task-manager
 description:
-draft: true
+draft: false
 ---
 https://github.com/cjo4m06/mcp-shrimp-task-manager
 
@@ -64,7 +64,4 @@ https://github.com/cjo4m06/mcp-shrimp-task-manager
 
 이 프로젝트는 **"내 로컬 개발 환경을 AI가 이해할 수 있는 체계적인 작업장으로 만들어주는 백엔드 엔진"** 역할을 합니다. 
 설치하고 나면 클로드가 단순한 채팅 상대를 넘어, 내 로컬 프로젝트의 상황을 꿰뚫고 있는 유능한 조수가 되는 것
-
-
-## 사용법
 

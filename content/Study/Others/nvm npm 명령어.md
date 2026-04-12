@@ -6,11 +6,10 @@ tags:
 description:
 draft: false
 ---
-Node Verver Manager
-Node Packge Manager
+Node Version Manager <br/>
+Node Package Manager
 
 가끔 쓰는 명령어 정리
-
 
 ## global 설치 모듈 확인
 
